@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Baap ar bank</title>
+</head>
+
+<body>
+    <header>
+        <div class="text-center	mt-10">
+            <h1 class="text-5xl	">Welcome to your baper bank</h1>
+        </div>
+    </header>
+
+    <section class="text-center">
+
+        <div class="grid grid-cols-3 w-9/12 mx-auto mt-10">
+            <div class="bg-fuchsia-500 w-9/12 p-5 rounded">
+                <p class="text-3xl">Total Deposit</p>
+                <p class="text-4xl">$<span id="depositBox">00</span> </p>
+            </div>
+            <div class="bg-lime-400 w-9/12 p-5 rounded">
+                <p class="text-3xl">Total Withdraw</p>
+                <p class="text-4xl">$<span id="withdraw-box">00</span> </p>
+            </div>
+            <div class="bg-emerald-400 w-9/12 p-5 rounded">
+                <p class="text-3xl">Balance</p>
+                <p class="text-4xl">$<span id="my-balance">1200</span> </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+        <div class="grid grid-cols-2 w-9/12 mx-auto mt-10">
+            <div class="bg-fuchsia-500 w-9/12 p-5 rounded">
+                <p class="text-3xl">Deposit</p>
+                <input class="block w-9/12 mb-2 p-2 mt-2" id="user-deposit" placeholder="Your deposit ammount"
+                    type="number">
+                <button id="btn-deposit" class="bg-green-400	py-2 px-5">deposit
+                </button>
+
+            </div>
+            <div class="bg-lime-400 w-9/12 p-5 rounded">
+                <p class="text-3xl">Withdraw</p>
+
+                <input class="block w-9/12 mb-2 p-2 mt-2" id="user-withdraw" placeholder="Your Withdraw ammount"
+                    type="number">
+                <button id="btn-withdraw" class="bg-green-400	py-2 px-5">withdraw
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script src="js/bank.js"></script>
+</body>
+
+</html>
